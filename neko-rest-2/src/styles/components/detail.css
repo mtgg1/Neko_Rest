@@ -1,0 +1,212 @@
+
+
+.detail {
+    display: flex; /* Menggunakan flexbox untuk tata letak horizontal */
+    flex-wrap: wrap; /* Memungkinkan perataan lebih dari satu baris jika diperlukan */
+    justify-content: space-around; /* Meletakkan elemen secara merata dengan jarak di sekitarnya */
+  }
+  
+  .detail {
+    color: #fff;
+    width: 100%; /* Lebar setiap elemen detail, dikurangi margin */
+    padding: 10px;
+    margin: 10px; /* Jarak antar elemen */
+    border-radius: 10px;
+    background-color: #333; /* Warna latar belakang untuk mengontraskan dengan konten */
+    text-align: center;
+  }
+  
+  /* Pastikan elemen-elemen dalam .detail menggunakan kelas yang sesuai */
+  .detail_imgContainer {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .detail_poster {
+    width: 100%;
+  }
+  
+  .detail_info {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .detail_rating {
+    color: #ffff;
+    font-weight: 500;
+  }
+  
+  .detail_overview {
+    color: rgba(252, 247, 247, 0.73);
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    padding: 6px;
+  }
+  
+  .detail_category {
+    color: #ffff;
+    font-size: 14px;
+    text-align: right;
+    margin: 12px;
+    padding: 8px;
+  }
+  
+  .detail_review {
+    border-bottom: solid 1px #dedede;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .detail_name {
+    width: 120px;
+  }
+  
+  .detail_rName {
+    width: 120px;
+  }
+  
+  .detail_review {
+    border-bottom: solid 1px #dedede;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .detail_name {
+    width: 120px;
+  }
+  
+  .detail_rName {
+    width: 120px;
+  }
+  
+  .detail_reviewContainer {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto; /* Menempatkan di tengah secara horizontal */
+  }
+  
+  .detail_time {
+    font-size: 10px;
+    color: #ffff;
+  }
+  
+  .review_container {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #ffff;
+  }
+    
+.headingMain{
+    color: #fff;
+    margin-top: 30px;
+}
+
+  .menu {
+    color: #fff;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr;
+    align-items: start;
+    align-content: space-evenly;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .menu_list {
+    padding: 6px;
+    margin: 2px;
+    margin-top: 4px;
+    font-size: 14px;
+    color: #ffff;
+    text-align: left;
+    border-bottom: solid 1px #dedede;
+  }
+
+  #fromAction{
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .input{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: block;
+    width: 100%;
+  }
+
+    input{
+      width: 20%;
+      border-radius: 6px;
+      border: 2px solid #000;
+      padding: 8px;
+    }
+
+    textarea{
+      width: 30%;
+      outline: none;
+      /* -webkit-appearance: none; */
+      height: 59px;
+      border-radius: 6px;
+      padding: 10px;
+    }
+
+    button{
+      width: 90px;
+      height: 48px;
+      outline: none;
+      padding: 4px;
+      min-height: 24px;
+      max-height: max-content;
+      min-width: 24px;
+      max-width: max-content;
+      color: #fff;
+      background-color: #000;
+      cursor: pointer;
+    }
+    
+    button:hover{
+        color: yellow;
+    }
+
+    .like {
+      min-height: 44px;
+      min-width: 44px;
+      text-align: center;
+      border-radius: 50%;
+      background: var(--red);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      border: 0;
+      
+      font-size: 18px;
+      color: white;
+      cursor: pointer;
+    }
+    .like:hover{
+      transform: rotate(360deg);
+    }
+
+    .like.liked {
+      background: white;
+      color: var(--red);
+    }
